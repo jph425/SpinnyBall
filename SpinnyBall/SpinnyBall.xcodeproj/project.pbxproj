@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		322F15642731AA78001E19AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 322F15632731AA78001E19AA /* AppDelegate.m */; };
+		322F15672731AA78001E19AA /* Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 322F15662731AA78001E19AA /* Renderer.m */; };
+		322F156A2731AA78001E19AA /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322F15692731AA78001E19AA /* GameViewController.m */; };
+		322F156C2731AA78001E19AA /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 322F156B2731AA78001E19AA /* Shaders.metal */; };
+		322F156F2731AA79001E19AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 322F156E2731AA79001E19AA /* Assets.xcassets */; };
+		322F15722731AA79001E19AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 322F15702731AA79001E19AA /* Main.storyboard */; };
+		322F15752731AA79001E19AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 322F15742731AA79001E19AA /* main.m */; };
+		322F157F2731AA7A001E19AA /* SpinnyBallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 322F157E2731AA7A001E19AA /* SpinnyBallTests.m */; };
+		322F15892731AA7A001E19AA /* SpinnyBallUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 322F15882731AA7A001E19AA /* SpinnyBallUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		322F157B2731AA7A001E19AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 322F15572731AA78001E19AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 322F155E2731AA78001E19AA;
+			remoteInfo = SpinnyBall;
+		};
+		322F15852731AA7A001E19AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 322F15572731AA78001E19AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 322F155E2731AA78001E19AA;
+			remoteInfo = SpinnyBall;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		322F155F2731AA78001E19AA /* SpinnyBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpinnyBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		322F15622731AA78001E19AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		322F15632731AA78001E19AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		322F15652731AA78001E19AA /* Renderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
+		322F15662731AA78001E19AA /* Renderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Renderer.m; sourceTree = "<group>"; };
+		322F15682731AA78001E19AA /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		322F15692731AA78001E19AA /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		322F156B2731AA78001E19AA /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		322F156D2731AA78001E19AA /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		322F156E2731AA79001E19AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		322F15712731AA79001E19AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		322F15732731AA79001E19AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		322F15742731AA79001E19AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		322F157A2731AA7A001E19AA /* SpinnyBallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpinnyBallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		322F157E2731AA7A001E19AA /* SpinnyBallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpinnyBallTests.m; sourceTree = "<group>"; };
+		322F15842731AA7A001E19AA /* SpinnyBallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpinnyBallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		322F15882731AA7A001E19AA /* SpinnyBallUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpinnyBallUITests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		322F155C2731AA78001E19AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		322F15772731AA7A001E19AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		322F15812731AA7A001E19AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		322F15562731AA78001E19AA = {
+			isa = PBXGroup;
+			children = (
+				322F15612731AA78001E19AA /* SpinnyBall */,
+				322F157D2731AA7A001E19AA /* SpinnyBallTests */,
+				322F15872731AA7A001E19AA /* SpinnyBallUITests */,
+				322F15602731AA78001E19AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		322F15602731AA78001E19AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				322F155F2731AA78001E19AA /* SpinnyBall.app */,
+				322F157A2731AA7A001E19AA /* SpinnyBallTests.xctest */,
+				322F15842731AA7A001E19AA /* SpinnyBallUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		322F15612731AA78001E19AA /* SpinnyBall */ = {
+			isa = PBXGroup;
+			children = (
+				322F15622731AA78001E19AA /* AppDelegate.h */,
+				322F15632731AA78001E19AA /* AppDelegate.m */,
+				322F15652731AA78001E19AA /* Renderer.h */,
+				322F15662731AA78001E19AA /* Renderer.m */,
+				322F15682731AA78001E19AA /* GameViewController.h */,
+				322F15692731AA78001E19AA /* GameViewController.m */,
+				322F156B2731AA78001E19AA /* Shaders.metal */,
+				322F156D2731AA78001E19AA /* ShaderTypes.h */,
+				322F156E2731AA79001E19AA /* Assets.xcassets */,
+				322F15702731AA79001E19AA /* Main.storyboard */,
+				322F15732731AA79001E19AA /* Info.plist */,
+				322F15742731AA79001E19AA /* main.m */,
+			);
+			path = SpinnyBall;
+			sourceTree = "<group>";
+		};
+		322F157D2731AA7A001E19AA /* SpinnyBallTests */ = {
+			isa = PBXGroup;
+			children = (
+				322F157E2731AA7A001E19AA /* SpinnyBallTests.m */,
+			);
+			path = SpinnyBallTests;
+			sourceTree = "<group>";
+		};
+		322F15872731AA7A001E19AA /* SpinnyBallUITests */ = {
+			isa = PBXGroup;
+			children = (
+				322F15882731AA7A001E19AA /* SpinnyBallUITests.m */,
+			);
+			path = SpinnyBallUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		322F155E2731AA78001E19AA /* SpinnyBall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 322F158C2731AA7A001E19AA /* Build configuration list for PBXNativeTarget "SpinnyBall" */;
+			buildPhases = (
+				322F155B2731AA78001E19AA /* Sources */,
+				322F155C2731AA78001E19AA /* Frameworks */,
+				322F155D2731AA78001E19AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpinnyBall;
+			productName = SpinnyBall;
+			productReference = 322F155F2731AA78001E19AA /* SpinnyBall.app */;
+			productType = "com.apple.product-type.application";
+		};
+		322F15792731AA7A001E19AA /* SpinnyBallTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 322F158F2731AA7A001E19AA /* Build configuration list for PBXNativeTarget "SpinnyBallTests" */;
+			buildPhases = (
+				322F15762731AA7A001E19AA /* Sources */,
+				322F15772731AA7A001E19AA /* Frameworks */,
+				322F15782731AA7A001E19AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				322F157C2731AA7A001E19AA /* PBXTargetDependency */,
+			);
+			name = SpinnyBallTests;
+			productName = SpinnyBallTests;
+			productReference = 322F157A2731AA7A001E19AA /* SpinnyBallTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		322F15832731AA7A001E19AA /* SpinnyBallUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 322F15922731AA7A001E19AA /* Build configuration list for PBXNativeTarget "SpinnyBallUITests" */;
+			buildPhases = (
+				322F15802731AA7A001E19AA /* Sources */,
+				322F15812731AA7A001E19AA /* Frameworks */,
+				322F15822731AA7A001E19AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				322F15862731AA7A001E19AA /* PBXTargetDependency */,
+			);
+			name = SpinnyBallUITests;
+			productName = SpinnyBallUITests;
+			productReference = 322F15842731AA7A001E19AA /* SpinnyBallUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		322F15572731AA78001E19AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					322F155E2731AA78001E19AA = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					322F15792731AA7A001E19AA = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 322F155E2731AA78001E19AA;
+					};
+					322F15832731AA7A001E19AA = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 322F155E2731AA78001E19AA;
+					};
+				};
+			};
+			buildConfigurationList = 322F155A2731AA78001E19AA /* Build configuration list for PBXProject "SpinnyBall" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 322F15562731AA78001E19AA;
+			productRefGroup = 322F15602731AA78001E19AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				322F155E2731AA78001E19AA /* SpinnyBall */,
+				322F15792731AA7A001E19AA /* SpinnyBallTests */,
+				322F15832731AA7A001E19AA /* SpinnyBallUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		322F155D2731AA78001E19AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				322F156F2731AA79001E19AA /* Assets.xcassets in Resources */,
+				322F15722731AA79001E19AA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		322F15782731AA7A001E19AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		322F15822731AA7A001E19AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		322F155B2731AA78001E19AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				322F15752731AA79001E19AA /* main.m in Sources */,
+				322F156C2731AA78001E19AA /* Shaders.metal in Sources */,
+				322F15672731AA78001E19AA /* Renderer.m in Sources */,
+				322F156A2731AA78001E19AA /* GameViewController.m in Sources */,
+				322F15642731AA78001E19AA /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		322F15762731AA7A001E19AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				322F157F2731AA7A001E19AA /* SpinnyBallTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		322F15802731AA7A001E19AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				322F15892731AA7A001E19AA /* SpinnyBallUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		322F157C2731AA7A001E19AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 322F155E2731AA78001E19AA /* SpinnyBall */;
+			targetProxy = 322F157B2731AA7A001E19AA /* PBXContainerItemProxy */;
+		};
+		322F15862731AA7A001E19AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 322F155E2731AA78001E19AA /* SpinnyBall */;
+			targetProxy = 322F15852731AA7A001E19AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		322F15702731AA79001E19AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				322F15712731AA79001E19AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		322F158A2731AA7A001E19AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		322F158B2731AA7A001E19AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		322F158D2731AA7A001E19AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2Z84P8B648;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamie.SpinnyBall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		322F158E2731AA7A001E19AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2Z84P8B648;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamie.SpinnyBall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		322F15902731AA7A001E19AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2Z84P8B648;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamie.SpinnyBallTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpinnyBall.app/Contents/MacOS/SpinnyBall";
+			};
+			name = Debug;
+		};
+		322F15912731AA7A001E19AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2Z84P8B648;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamie.SpinnyBallTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpinnyBall.app/Contents/MacOS/SpinnyBall";
+			};
+			name = Release;
+		};
+		322F15932731AA7A001E19AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2Z84P8B648;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamie.SpinnyBallUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SpinnyBall;
+			};
+			name = Debug;
+		};
+		322F15942731AA7A001E19AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2Z84P8B648;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamie.SpinnyBallUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SpinnyBall;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		322F155A2731AA78001E19AA /* Build configuration list for PBXProject "SpinnyBall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				322F158A2731AA7A001E19AA /* Debug */,
+				322F158B2731AA7A001E19AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		322F158C2731AA7A001E19AA /* Build configuration list for PBXNativeTarget "SpinnyBall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				322F158D2731AA7A001E19AA /* Debug */,
+				322F158E2731AA7A001E19AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		322F158F2731AA7A001E19AA /* Build configuration list for PBXNativeTarget "SpinnyBallTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				322F15902731AA7A001E19AA /* Debug */,
+				322F15912731AA7A001E19AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		322F15922731AA7A001E19AA /* Build configuration list for PBXNativeTarget "SpinnyBallUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				322F15932731AA7A001E19AA /* Debug */,
+				322F15942731AA7A001E19AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 322F15572731AA78001E19AA /* Project object */;
+}
